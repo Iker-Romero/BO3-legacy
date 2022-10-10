@@ -1,0 +1,42 @@
+{
+  "guns": [
+    {
+      "id": 1,
+      "name": "Kuda",
+      "type": "Submachine Gun",
+      "image": ""
+    },
+    {
+      "id": 2,
+      "name": "VMP",
+      "type": "Submachine Gun",
+      "image": ""
+    },
+    {
+      "id": 3,
+      "name": "VMP",
+      "type": "Submachine Gun",
+      "image": ""
+    },
+    {
+      "id": 4,
+      "name": "VMP",
+      "type": "Submachine Gun",
+      "image": ""
+    },
+    {
+      "id": 5,
+      "name": "VMP",
+      "type": "Submachine Gun",
+      "image": ""
+    },
+    {
+      "id": 6,
+      "name": "VMP",
+      "type": "Submachine Gun",
+      "image": ""
+    }
+  ],
+  "specialists": [],
+  "maps": []
+}
