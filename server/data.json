@@ -4,36 +4,72 @@
       "id": 1,
       "name": "Kuda",
       "type": "Submachine Gun",
+      "stats": {
+        "damage": 6,
+        "range": 11,
+        "fire rate": 10,
+        "accuracy": 7
+      },
       "image": ""
     },
     {
       "id": 2,
       "name": "VMP",
       "type": "Submachine Gun",
+      "stats": {
+        "damage": 12,
+        "range": 4,
+        "fire rate": 15,
+        "accuracy": 3
+      },
       "image": ""
     },
     {
       "id": 3,
-      "name": "VMP",
-      "type": "Submachine Gun",
+      "name": "KN-44",
+      "type": "Assault Rifle",
+      "stats": {
+        "damage": 9,
+        "range": 8,
+        "fire rate": 15,
+        "accuracy": 5
+      },
       "image": ""
     },
     {
       "id": 4,
-      "name": "VMP",
+      "name": "M8A7",
       "type": "Submachine Gun",
+      "stats": {
+        "damage": 5,
+        "range": 11,
+        "fire rate": 7,
+        "accuracy": 14
+      },
       "image": ""
     },
     {
       "id": 5,
-      "name": "VMP",
-      "type": "Submachine Gun",
+      "name": "Locus",
+      "type": "Sniper Rifles",
+      "stats": {
+        "damage": 14,
+        "range": 14,
+        "fire rate": 3,
+        "accuracy": 14
+      },
       "image": ""
     },
     {
       "id": 6,
-      "name": "VMP",
-      "type": "Submachine Gun",
+      "name": "SVG",
+      "type": "Sniper Rifles",
+      "stats": {
+        "damage": 16,
+        "range": 14,
+        "fire rate": 2,
+        "accuracy": 13
+      },
       "image": ""
     }
   ],
