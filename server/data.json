@@ -10,7 +10,7 @@
         "fire rate": 10,
         "accuracy": 7
       },
-      "image": ""
+      "image": "/images/guns/kuda.png"
     },
     {
       "id": 2,
@@ -22,7 +22,7 @@
         "fire rate": 15,
         "accuracy": 3
       },
-      "image": ""
+      "image": "/images/guns/vmp.png"
     },
     {
       "id": 3,
@@ -34,7 +34,7 @@
         "fire rate": 15,
         "accuracy": 5
       },
-      "image": ""
+      "image": "/images/guns/kn-44.png"
     },
     {
       "id": 4,
@@ -46,7 +46,7 @@
         "fire rate": 7,
         "accuracy": 14
       },
-      "image": ""
+      "image": "/images/guns/m8a7.png"
     },
     {
       "id": 5,
@@ -58,11 +58,11 @@
         "fire rate": 3,
         "accuracy": 14
       },
-      "image": ""
+      "image": "/images/guns/locus.png"
     },
     {
       "id": 6,
-      "name": "SVG",
+      "name": "SVG-100",
       "type": "Sniper Rifles",
       "stats": {
         "damage": 16,
@@ -70,7 +70,7 @@
         "fire rate": 2,
         "accuracy": 13
       },
-      "image": ""
+      "image": "/images/guns/svg-100.png"
     }
   ],
   "specialists": [],

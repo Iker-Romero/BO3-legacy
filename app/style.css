@@ -132,8 +132,83 @@ table {
 
 /* GENERAL */
 
-body {
-/* background-image: url("/images/background.jpg"); */
+* {
+  box-sizing: border-box;
 }
 
+#app {
+padding: 1rem;
+}
+/* 
+body {
+background-image: url("/images/background.jpg");
+} */
+
 /* NAV BAR */
+
+nav {
+height: auto;
+padding: 1rem;
+border: 2px solid black;
+margin: -1rem -1rem 1rem -1rem;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+nav > ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+/* SECTION */
+
+h1 {
+  width: 100%;
+  margin: 1rem;
+}
+
+.guns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 1rem;
+  align-items: baseline;
+  align-content: center;
+}
+
+.guns > figure {
+  border: 2px solid black;
+  width: 22rem;
+  height: auto;
+  padding: 1rem;
+  object-fit: cover;
+  overflow: hidden;
+  align-self: center;
+}
+
+.figure-description {
+  /* height: auto; */
+  height: 2rem;
+}
+
+.guns > figure > .image-container {
+  /* object-fit: cover; */
+  /* overflow: hidden; */
+  /* display: flex;
+  justify-content: center;
+  flex: 1;
+  position: relative; */
+  width: 100%;
+}
+
+.guns > figure > .image-container > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  /* scale: 0.8;
+  transition: ease-in-out;
+  transition-duration: 1s; */
+}
