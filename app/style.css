@@ -136,24 +136,26 @@ table {
   box-sizing: border-box;
 }
 
-#app {
-padding: 1rem;
-}
-/* 
 body {
-background-image: url("/images/background.jpg");
-} */
+/* background-image: url("/images/background.jpg"); */
+display: flex;
+justify-content: center;
+}
+
+#app {
+  padding: 1rem;
+}
 
 /* NAV BAR */
 
 nav {
-height: auto;
-padding: 1rem;
-border: 2px solid black;
-margin: -1rem -1rem 1rem -1rem;
-display: flex;
-justify-content: center;
-align-items: center;
+  height: auto;
+  padding: 1rem;
+  border: 2px solid black;
+  margin: -1rem -1rem 1rem -1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav > ul {

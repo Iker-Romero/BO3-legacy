@@ -73,6 +73,42 @@
       "image": "/images/guns/svg-100.png"
     }
   ],
-  "specialists": [],
-  "maps": []
+  "specialists": [
+    {
+      "id": 1,
+      "alias": "Outrider",
+      "name": "Alessandra Castillo",
+      "image": ""
+    },
+    {
+      "id": 2,
+      "alias": "Prophet",
+      "name": "David Wilkes",
+      "image": ""
+    },
+    {
+      "id": 3,
+      "alias": "Seraph",
+      "name": "He Zhen-Zhen",
+      "image": ""
+    },
+    {
+      "id": 4,
+      "alias": "Reaper",
+      "name": "Experimental War Robot-115",
+      "image": ""
+    },
+    {
+      "id": 5,
+      "alias": "Spectre",
+      "name": "\"Unknown\"",
+      "image": ""
+    },
+    {
+      "id": 6,
+      "alias": "Firebreak",
+      "name": "Krystof Hejek",
+      "image": ""
+    }
+  ]
 }

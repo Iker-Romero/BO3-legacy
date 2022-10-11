@@ -14,9 +14,6 @@ export const navBar = () => {
             <a href="#specialists">Specialists</a>
           </li>
           <li>
-            <a href="#maps">Maps</a>
-          </li>
-          <li>
             <a href="#generator">Generator</a>
           </li>
         </ul>
