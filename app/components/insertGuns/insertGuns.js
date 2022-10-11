@@ -2,20 +2,16 @@ import { getData } from "../../services/sevices"
 
 export const insertGuns = async () => {
   document.querySelector("#app").insertAdjacentHTML("beforeend",`
-  <section class="guns" id="guns">
+  <section class="section-container" id="section-container">
     <h1 class="title" >GUNS</h1>
   </section>
   `);
   const guns = await getData("http://127.0.0.1:8080/guns");
   guns.forEach(gun => {
-    const gunsSection = document.querySelector("#guns");
-    const getStats = () => {
-      document
-      let stats = document.createElement("div").classList.add("")
-    }
+    const gunsSection = document.querySelector("#section-container");
     gunsSection.innerHTML += `
     <figure>
-      <div class="gun-description">
+      <div class="figure-description">
         <figcaption>${gun.name}</figcaption>
         <h2>${gun.type}</h2>
       </div>

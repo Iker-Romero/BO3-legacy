@@ -10,7 +10,7 @@
         "fire rate": 10,
         "accuracy": 7
       },
-      "image": "/images/guns/kuda.png"
+      "image": "https://res.cloudinary.com/dvwva99mi/image/upload/v1665490363/guns/kuda_bclr0m.png"
     },
     {
       "id": 2,
@@ -22,7 +22,7 @@
         "fire rate": 15,
         "accuracy": 3
       },
-      "image": "/images/guns/vmp.png"
+      "image": "https://res.cloudinary.com/dvwva99mi/image/upload/v1665490363/guns/vmp_bhysrp.png"
     },
     {
       "id": 3,
@@ -34,7 +34,7 @@
         "fire rate": 15,
         "accuracy": 5
       },
-      "image": "/images/guns/kn-44.png"
+      "image": "https://res.cloudinary.com/dvwva99mi/image/upload/v1665490363/guns/kn-44_dlw98q.png"
     },
     {
       "id": 4,
@@ -46,7 +46,7 @@
         "fire rate": 7,
         "accuracy": 14
       },
-      "image": "/images/guns/m8a7.png"
+      "image": "https://res.cloudinary.com/dvwva99mi/image/upload/v1665490363/guns/m8a7_jvifbq.png"
     },
     {
       "id": 5,
@@ -58,7 +58,7 @@
         "fire rate": 3,
         "accuracy": 14
       },
-      "image": "/images/guns/locus.png"
+      "image": "https://res.cloudinary.com/dvwva99mi/image/upload/v1665490363/guns/locus_domgeu.png"
     },
     {
       "id": 6,
@@ -70,7 +70,7 @@
         "fire rate": 2,
         "accuracy": 13
       },
-      "image": "/images/guns/svg-100.png"
+      "image": "https://res.cloudinary.com/dvwva99mi/image/upload/v1665490363/guns/svg-100_diju1c.png"
     }
   ],
   "specialists": [
@@ -78,37 +78,37 @@
       "id": 1,
       "alias": "Outrider",
       "name": "Alessandra Castillo",
-      "image": ""
+      "image": "https://res.cloudinary.com/dvwva99mi/image/upload/v1665490470/specialists/outrider_wvrobf.webp"
     },
     {
       "id": 2,
       "alias": "Prophet",
       "name": "David Wilkes",
-      "image": ""
+      "image": "https://res.cloudinary.com/dvwva99mi/image/upload/v1665490470/specialists/prophet_gumo6y.webp"
     },
     {
       "id": 3,
       "alias": "Seraph",
       "name": "He Zhen-Zhen",
-      "image": ""
+      "image": "https://res.cloudinary.com/dvwva99mi/image/upload/v1665490470/specialists/seraph_n0dd1l.webp"
     },
     {
       "id": 4,
       "alias": "Reaper",
       "name": "Experimental War Robot-115",
-      "image": ""
+      "image": "https://res.cloudinary.com/dvwva99mi/image/upload/v1665490470/specialists/reaper_c1j0cb.webp"
     },
     {
       "id": 5,
       "alias": "Spectre",
       "name": "\"Unknown\"",
-      "image": ""
+      "image": "https://res.cloudinary.com/dvwva99mi/image/upload/v1665490470/specialists/sprectre_qgncgc.webp"
     },
     {
       "id": 6,
       "alias": "Firebreak",
       "name": "Krystof Hejek",
-      "image": ""
+      "image": "https://res.cloudinary.com/dvwva99mi/image/upload/v1665490470/specialists/firebreak_zb4hba.webp"
     }
   ]
 }

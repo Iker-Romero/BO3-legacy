@@ -149,7 +149,7 @@ justify-content: center;
 /* NAV BAR */
 
 nav {
-  height: auto;
+  height: 4rem;
   padding: 1rem;
   border: 2px solid black;
   margin: -1rem -1rem 1rem -1rem;
@@ -172,16 +172,16 @@ h1 {
   margin: 1rem;
 }
 
-.guns {
+.section-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  row-gap: 1rem;
+  gap: 1rem;
   align-items: baseline;
   align-content: center;
 }
 
-.guns > figure {
+.section-container > figure {
   border: 2px solid black;
   width: 22rem;
   height: auto;
@@ -189,6 +189,9 @@ h1 {
   object-fit: cover;
   overflow: hidden;
   align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .figure-description {
@@ -196,7 +199,7 @@ h1 {
   height: 2rem;
 }
 
-.guns > figure > .image-container {
+.section-container > figure > .image-container {
   /* object-fit: cover; */
   /* overflow: hidden; */
   /* display: flex;
@@ -204,12 +207,15 @@ h1 {
   flex: 1;
   position: relative; */
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.guns > figure > .image-container > img {
+.section-container > figure > .image-container > img {
   height: 100%;
-  width: 100%;
+  width: calc(100% + 2rem);
   object-fit: contain;
+  border-radius: 0.5rem;
   /* scale: 0.8;
   transition: ease-in-out;
   transition-duration: 1s; */
