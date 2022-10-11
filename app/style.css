@@ -194,10 +194,9 @@ h1 {
   gap: 1rem;
 }
 
-.figure-description {
-  /* height: auto; */
-  height: 2rem;
-}
+/* .figure-description {
+
+} */
 
 .section-container > figure > .image-container {
   /* object-fit: cover; */
@@ -216,7 +215,11 @@ h1 {
   width: calc(100% + 2rem);
   object-fit: contain;
   border-radius: 0.5rem;
-  /* scale: 0.8;
-  transition: ease-in-out;
-  transition-duration: 1s; */
 }
+
+/* .section-container > figure > .image-container > img:hover {
+  width: calc(100% + 2rem);
+  scale: 0.8;
+  transition: ease-in-out;
+  transition-duration: 1s;
+} */
