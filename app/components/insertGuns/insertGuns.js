@@ -4,6 +4,9 @@ export const insertGuns = async (array, ubication) => {
     `
     <section class="section-container" id="guns-section">
       <h1 class="title" >GUNS</h1>
+      <div class="figures-container" id="guns-figures">
+      
+      </div>
     </section>
     `
     );

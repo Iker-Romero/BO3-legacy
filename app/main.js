@@ -1,14 +1,17 @@
 import { insertGenerator } from "./components/insertGenerator/insertGenerator";
 import { insertGuns } from "./components/insertGuns/insertGuns";
-import { insertSpecialists } from "./components/insertSpecialists/isertSpecialists";
+import { insertSection } from "./components/insertSection/insertSection";
+import { insertSpecialists } from "./components/insertSpecialists/insertSpecialists";
 import { navBar } from "./components/NavBar/navBar";
 import { getData } from "./services/sevices";
 import "./style.css";
 
 const init = () => {
   navBar();
+  insertSection("specialists-section", "SPECIALISTS");
   insertSpecialists(getData("http://localhost:8080/specialists"), "#specialists-section");
-  insertGuns(getData("http://localhost:8080/guns"), "#guns-section");
+  insertSection("#guns-section", "GUNS");
+  insertGuns(getData("http://localhost:8080/guns"), "#guns-figures");
   insertGenerator();
 };
 

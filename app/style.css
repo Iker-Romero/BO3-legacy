@@ -172,7 +172,16 @@ h1 {
   margin: 1rem;
 }
 
-.section-container {
+/* .section-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+  align-items: baseline;
+  align-content: center;
+} */
+
+.section-container > .figures-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -181,7 +190,7 @@ h1 {
   align-content: center;
 }
 
-.section-container > figure {
+.section-container > .figures-container > figure {
   border: 2px solid black;
   width: 22rem;
   height: auto;
@@ -198,7 +207,7 @@ h1 {
 
 } */
 
-.section-container > figure > .image-container {
+.section-container > .figures-container > figure > .image-container {
   /* object-fit: cover; */
   /* overflow: hidden; */
   /* display: flex;
@@ -210,14 +219,14 @@ h1 {
   justify-content: center;
 }
 
-.section-container > figure > .image-container > img {
+.section-container > .figures-container > figure > .image-container > img {
   height: 100%;
   width: calc(100% + 2rem);
   object-fit: contain;
   border-radius: 0.5rem;
 }
 
-/* .section-container > figure > .image-container > img:hover {
+/* .section-container > .figures-container > figure > .image-container > img:hover {
   width: calc(100% + 2rem);
   scale: 0.8;
   transition: ease-in-out;
