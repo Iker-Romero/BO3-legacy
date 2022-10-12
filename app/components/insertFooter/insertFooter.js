@@ -1,6 +1,6 @@
 const contactInfo = [
   {
-    name: "Iker Romero Caramés",
+    name: "Iker Romero Carames",
     socialNetworks: {
       github: {
         icon: "https://res.cloudinary.com/dvwva99mi/image/upload/v1665572313/logos/github-light_bblejx.png",

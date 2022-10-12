@@ -214,10 +214,11 @@ nav {
   position: fixed;
   left: 0;
   top: 0;
-  height: 4rem;
+  min-height: 4rem;
+  height: auto;
+  line-height: 1.2rem;
   width: 100vw;
   padding: 1rem;
-  /* margin: -1rem -1rem 1rem -1rem; */
   margin-left: -1rem;
   display: flex;
   justify-content: center;
@@ -233,11 +234,14 @@ nav > ul {
   justify-content: space-evenly;
 }
 
+nav > ul > li:first-child {
+  padding-bottom: 4px;
+  border-bottom: 4px solid orange;
+}
+
 nav a {
   text-decoration: none;
-  /* font-family: "call_of_ops_dutyregular", Arial, Helvetica, sans-serif; */
   font-family: 'black_ops_2regular', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  /* font-size: 2rem; */
 }
 
 /* SECTION */
@@ -343,6 +347,8 @@ footer {
 
 footer > p {
   color: var(--primary-highligth);
+  display: flex;
+  justify-content: center;
 }
 
 footer > ul {

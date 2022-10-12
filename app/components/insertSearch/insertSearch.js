@@ -8,16 +8,22 @@ export const insertSearch = (ubicationID, section, id) => {
     "beforeBegin",
     `<input type="text" class="searchInput" id="${id}"/>`
   );
-  const input = document.querySelectorAll(".searchInput")[0];
+  // const input = document.querySelectorAll(".searchInput")[0];
+  const buscador = document.getElementById("specialistsInput")
 
   // const input = document.querySelector("#specialistsInput");
-  console.log(input)
-  input.addEventListener("input", () => {
-    return console.log("HOLA");
-  });
+  console.log(buscador)
+  // input.addEventListener("input", () => {
+  //   return console.log("HOLA");
+  // });
+  const seccion = document.querySelector("#specialists-section");
 
-  input.addEventListener("input", async () => {
-    console.log("HOLA")
+  buscador.addEventListener("click", () => {
+    seccion.innerHTML  = ""
+  })
+
+  const buscador2 = async () => {
+    
     try {
       console.log("hola")
       const figuresArray = await getData(
@@ -26,7 +32,7 @@ export const insertSearch = (ubicationID, section, id) => {
       console.log(figuresArray);
       const filteredFigures = figuresArray.filter((figure) => {
         const name = figure.alias || figure.name;
-        return name.toLowerCase().includes(input.value.toLowerCase());
+        return name.toLowerCase().includes(input.target.value.toLowerCase());
       });
 
       console.log(filteredFigures);
@@ -41,5 +47,5 @@ export const insertSearch = (ubicationID, section, id) => {
     } catch (error) {
       console.log(error);
     }
-  });
+  };
 };
