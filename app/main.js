@@ -1,4 +1,5 @@
 import { animatedBackground } from "./components/animatedBackground/animatedBackground";
+import { gunsFilter } from "./components/gunsFilter/gunsFilter";
 import { insertFooter } from "./components/insertFooter/insertFooter";
 import { insertGenerator } from "./components/insertGenerator/insertGenerator";
 import { insertGuns } from "./components/insertGuns/insertGuns";
@@ -24,6 +25,7 @@ const init = () => {
     getData("https://bo3-legacy-json-server.onrender.com/guns"),
     "#guns-figures"
   );
+  gunsFilter();
   insertGenerator();
   insertFooter();
 };

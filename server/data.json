@@ -51,7 +51,7 @@
     {
       "id": 5,
       "name": "Locus",
-      "type": "Sniper Rifles",
+      "type": "Sniper Rifle",
       "stats": {
         "damage": 14,
         "range": 14,
@@ -63,7 +63,7 @@
     {
       "id": 6,
       "name": "SVG-100",
-      "type": "Sniper Rifles",
+      "type": "Sniper Rifle",
       "stats": {
         "damage": 16,
         "range": 14,
