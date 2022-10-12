@@ -1,3 +1,4 @@
+import { insertFooter } from "./components/insertFooter/insertFooter";
 import { insertGenerator } from "./components/insertGenerator/insertGenerator";
 import { insertGuns } from "./components/insertGuns/insertGuns";
 import { insertSection } from "./components/insertSection/insertSection";
@@ -13,6 +14,7 @@ const init = () => {
   insertSection("guns-section", "GUNS", "guns-figures");
   insertGuns(getData("http://localhost:8080/guns"), "#guns-figures");
   insertGenerator();
+  insertFooter()
 };
 
 init();
