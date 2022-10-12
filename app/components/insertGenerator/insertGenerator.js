@@ -17,9 +17,9 @@ export const insertGenerator = async () => {
   const button = document.querySelector("#generator");
   button.addEventListener("click", async () => {
     try {
-      const specialists = await getData("http://127.0.0.1:8080/specialists");
+      const specialists = await getData("https://bo3-legacy-json-server.onrender.com/specialists");
       const randomSpecialist = [specialists[Math.floor(Math.random() * specialists.length)]];
-      const guns = await getData("http://127.0.0.1:8080/guns");
+      const guns = await getData("https://bo3-legacy-json-server.onrender.com/guns");
       const randomGun = [guns[Math.floor(Math.random() * guns.length)]];
       // Elimino los anteriores una vez ya está todo cargado para que no se contraiga la página en esos milisegundos
       clearChilds(document.querySelector("#random-figures"));
