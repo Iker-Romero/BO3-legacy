@@ -14,13 +14,16 @@ const init = () => {
   navBar();
   insertSection("specialists-section", "SPECIALISTS", "specialists-figures");
   insertSpecialists(
-    getData("http://localhost:8080/specialists"),
+    getData("https://bo3-legacy-json-server.onrender.com/specialists"),
     "#specialists-figures"
   );
   insertSearch("#specialists-figures", "specialists", "specialistsInput");
   insertSection("guns-section", "GUNS", "guns-figures");
   insertSearch("#guns-figures", "guns", "gunsInput");
-  insertGuns(getData("http://localhost:8080/guns"), "#guns-figures");
+  insertGuns(
+    getData("https://bo3-legacy-json-server.onrender.com/guns"),
+    "#guns-figures"
+  );
   insertGenerator();
   insertFooter();
 };

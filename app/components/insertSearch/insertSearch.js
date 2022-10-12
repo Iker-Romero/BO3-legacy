@@ -27,7 +27,7 @@ export const insertSearch = (ubicationID, section, id) => {
     try {
       console.log("hola")
       const figuresArray = await getData(
-        `"http://localhost:8080/${section}"`
+        `"https://bo3-legacy-json-server.onrender.com/${section}"`
       );
       console.log(figuresArray);
       const filteredFigures = figuresArray.filter((figure) => {
