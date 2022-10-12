@@ -192,7 +192,7 @@ h1 {
 
 .section-container > .figures-container > figure {
   border: 2px solid black;
-  width: 22rem;
+  width: 20rem;
   height: auto;
   padding: 1rem;
   object-fit: cover;
@@ -232,3 +232,8 @@ h1 {
   transition: ease-in-out;
   transition-duration: 1s;
 } */
+
+#random-figures {
+  display: flex;
+  justify-content: center;
+}

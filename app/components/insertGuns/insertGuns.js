@@ -1,20 +1,19 @@
-export const insertGuns = async (array, ubication) => {
-  document.querySelector("#app").insertAdjacentHTML(
-    "beforeend",
-    `
-    <section class="section-container" id="guns-section">
-      <h1 class="title" >GUNS</h1>
-      <div class="figures-container" id="guns-figures">
-      
-      </div>
-    </section>
-    `
-    );
+export const insertGuns = async (array, idUbication) => {
+  // document.querySelector("#app").insertAdjacentHTML(
+  //   "beforeend",
+  //   `
+  //   <section class="section-container" id="guns-section">
+  //     <h1 class="title" >GUNS</h1>
+  //     <div class="figures-container" id="guns-figures">
+
+  //     </div>
+  //   </section>
+  //   `
+  //   );
   const guns = await array;
-  guns.forEach(async (gun) => {
-    try {
-      const gunsSection = await document.querySelector(ubication);
-      gunsSection.innerHTML += `
+  guns.forEach((gun) => {
+    const figuresContainer = document.querySelector(idUbication);
+    figuresContainer.innerHTML += `
       <figure>
         <div class="figure-description">
           <figcaption>${gun.name}</figcaption>
@@ -31,9 +30,6 @@ export const insertGuns = async (array, ubication) => {
           <p>Accuracy: ${gun.stats.accuracy}</p>
         </div>
       </figure>
-      `;
-    } catch (error) {
-      console.log(error);
-    }
+    `;
   });
 };
