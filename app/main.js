@@ -8,9 +8,9 @@ import "./style.css";
 
 const init = () => {
   navBar();
-  insertSection("specialists-section", "SPECIALISTS");
-  insertSpecialists(getData("http://localhost:8080/specialists"), "#specialists-section");
-  insertSection("#guns-section", "GUNS");
+  insertSection("specialists-section", "SPECIALISTS", "specialists-figures");
+  insertSpecialists(getData("http://localhost:8080/specialists"), "#specialists-figures");
+  insertSection("guns-section", "GUNS", "guns-figures");
   insertGuns(getData("http://localhost:8080/guns"), "#guns-figures");
   insertGenerator();
 };
