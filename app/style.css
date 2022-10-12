@@ -128,34 +128,102 @@ table {
   border-spacing: 0;
 }
 
-/* COLOR PALETTE */
+/* FONTS */
+
+@font-face {
+  font-family: 'call_of_ops_dutyregular';
+  src: url('https://res.cloudinary.com/dvwva99mi/raw/upload/v1665595846/BO3%20LEGACY/webfontkit-20221012-132820/callofopsduty-qayq-webfont_ktxw28.woff2') format('woff2'),
+       url('https://res.cloudinary.com/dvwva99mi/raw/upload/v1665595846/BO3%20LEGACY/webfontkit-20221012-132820/callofopsduty-qayq-webfont_r4cts2.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'black_ops_2regular';
+  src: url('https://res.cloudinary.com/dvwva99mi/raw/upload/v1665595846/BO3%20LEGACY/webfontkit-20221012-132820/black_ops_2_font-webfont_jg6xr9.woff2') format('woff2'),
+       url('https://res.cloudinary.com/dvwva99mi/raw/upload/v1665595846/BO3%20LEGACY/webfontkit-20221012-132820/black_ops_2_font-webfont_mc9zqj.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
 
 /* GENERAL */
+:root {
+  font-family: 'call_of_ops_dutyregular', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 0.2rem;
+}
 
 * {
   box-sizing: border-box;
+  color: white;
+  font-size: 16px;
 }
 
-body {
-/* background-image: url("/images/background.jpg"); */
-/* display: flex;
-justify-content: center; */
-}
+/* body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  } */
 
 #app {
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#animatedBackground {
+  margin: 3rem -1rem -1rem -1rem;
+  /* height: 100%; */
+  z-index: -1;
+  position: fixed;
+  /* right: 0;
+  top: 0; */
+}
+
+input,
+select,
+textarea {
+  font-family: 'call_of_ops_dutyregular', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  height: 2rem;
+  border-radius: 1rem;
+  /* max-width: 20rem;
+  min-width: auto;
+  width: max-content; */
+  width: 20rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  font-family: 'call_of_ops_dutyregular', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  background-color: white;
+  color: black;
+  width: 10rem;
 }
 
 /* NAV BAR */
 
 nav {
+  position: fixed;
+  left: 0;
+  top: 0;
   height: 4rem;
+  width: 100vw;
   padding: 1rem;
-  border: 2px solid black;
-  margin: -1rem -1rem 1rem -1rem;
+  /* margin: -1rem -1rem 1rem -1rem; */
+  margin-left: -1rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: black;
+  color: white;
 }
 
 nav > ul {
@@ -165,11 +233,25 @@ nav > ul {
   justify-content: space-evenly;
 }
 
+nav a {
+  text-decoration: none;
+  /* font-family: "call_of_ops_dutyregular", Arial, Helvetica, sans-serif; */
+  font-family: 'black_ops_2regular', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  /* font-size: 2rem; */
+}
+
 /* SECTION */
 
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
 h1 {
-  width: 100%;
-  margin: 1rem;
+  margin: 4rem 0 1rem;
+  font-size: 2rem;
 }
 
 /* .section-container {
@@ -181,6 +263,10 @@ h1 {
   align-content: center;
 } */
 
+#specialists-section {
+  margin-top: 4rem;
+}
+
 .section-container > .figures-container {
   display: flex;
   flex-wrap: wrap;
@@ -191,21 +277,21 @@ h1 {
 }
 
 .section-container > .figures-container > figure {
-  border: 2px solid black;
   width: 20rem;
   height: auto;
-  padding: 1rem;
   object-fit: cover;
   overflow: hidden;
   align-self: center;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  line-height: 1.5rem;
 }
 
-/* .figure-description {
-
-} */
+.figure-description {
+  background-color: black;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
 
 .section-container > .figures-container > figure > .image-container {
   /* object-fit: cover; */
@@ -214,6 +300,7 @@ h1 {
   justify-content: center;
   flex: 1;
   position: relative; */
+  padding: 1rem;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -232,6 +319,12 @@ h1 {
   transition: ease-in-out;
   transition-duration: 1s;
 } */
+
+.gun-stats {
+  background-color: black;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
 
 #random-figures {
   display: flex;

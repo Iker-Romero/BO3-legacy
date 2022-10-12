@@ -1,7 +1,7 @@
-export const insertSpecialists = async (array, idUbicacion) => {
+export const insertSpecialists = async (array, ubicationID) => {
   try {
     const specialists = await array;
-    const figuresContainer = document.querySelector(idUbicacion);
+    const figuresContainer = document.querySelector(ubicationID);
     specialists.forEach((specialist) => {
       figuresContainer.insertAdjacentHTML(
         "beforeend",

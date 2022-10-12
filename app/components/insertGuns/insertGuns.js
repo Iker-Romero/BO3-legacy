@@ -1,18 +1,7 @@
-export const insertGuns = async (array, idUbication) => {
-  // document.querySelector("#app").insertAdjacentHTML(
-  //   "beforeend",
-  //   `
-  //   <section class="section-container" id="guns-section">
-  //     <h1 class="title" >GUNS</h1>
-  //     <div class="figures-container" id="guns-figures">
-
-  //     </div>
-  //   </section>
-  //   `
-  //   );
+export const insertGuns = async (array, ubicationID) => {
   const guns = await array;
   guns.forEach((gun) => {
-    const figuresContainer = document.querySelector(idUbication);
+    const figuresContainer = document.querySelector(ubicationID);
     figuresContainer.innerHTML += `
       <figure>
         <div class="figure-description">
