@@ -39,7 +39,7 @@
     {
       "id": 4,
       "name": "M8A7",
-      "type": "Submachine Gun",
+      "type": "Assault Rifle",
       "stats": {
         "damage": 5,
         "range": 11,
