@@ -8,13 +8,13 @@ export const navBar = () => {
             <a href="#">BO3 LEGACY</a>
           </li>
           <li>
-            <a href="#guns-section">Guns</a>
-          </li>
-          <li>
             <a href="#specialists-section">Specialists</a>
           </li>
           <li>
-            <a href="#generator">Generator</a>
+            <a href="#guns-section">Guns</a>
+          </li>
+          <li>
+            <a href="#generator">Get Ready</a>
           </li>
         </ul>
       </nav>
