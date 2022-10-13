@@ -184,6 +184,7 @@ table {
 
 input,
 select,
+option,
 textarea {
   font-family: 'call_of_ops_dutyregular', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   background-color: white;
