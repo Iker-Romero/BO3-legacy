@@ -3,29 +3,26 @@ import { insertGuns } from "../insertGuns/insertGuns";
 import { insertSpecialists } from "../insertSpecialists/insertSpecialists";
 
 export const insertSearch = (ubicationID, section, id) => {
-  const ubication = document.querySelector(ubicationID);
-  ubication.insertAdjacentHTML(
-    "beforeBegin",
-    `<input type="text" class="searchInput" id="${id}"/>`
-  );
-  // const input = document.querySelectorAll(".searchInput")[0];
-  const buscador = document.getElementById("specialistsInput")
+  // const ubication = document.querySelector(ubicationID);
+  // ubication.insertAdjacentHTML(
+  //   "beforeBegin",
+  //   `<input type="text" class="searchInput" id="${id}"/>`
+  // );
 
-  // const input = document.querySelector("#specialistsInput");
-  console.log(buscador)
-  // input.addEventListener("input", () => {
-  //   return console.log("HOLA");
-  // });
-  const seccion = document.querySelector("#specialists-section");
+  const input = document.getElementById("specialistsInput");
 
-  buscador.addEventListener("click", () => {
-    seccion.innerHTML  = ""
-  })
+  console.log(input);
 
-  const buscador2 = async () => {
-    
+  // const seccion = document.querySelector("#specialists-section");
+
+  // buscador.addEventListener("mouseover", () => {
+  //   console.log("hola")
+  //   seccion.innerHTML  = ""
+  // })
+
+  input.addEventListener("input", async () => {
     try {
-      console.log("hola")
+      console.log("hola");
       const figuresArray = await getData(
         `"https://bo3-legacy-json-server.onrender.com/${section}"`
       );
@@ -47,5 +44,5 @@ export const insertSearch = (ubicationID, section, id) => {
     } catch (error) {
       console.log(error);
     }
-  };
+  });
 };
