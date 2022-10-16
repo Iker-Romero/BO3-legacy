@@ -8,7 +8,7 @@ export const gunsFilter = () => {
     "afterend",
     `
   <select name="gunsFilter" id="gunsFilter">
-    <option value="">Type of gun:</option>
+    <option value="" disabled selected>Type of gun:</option>
     <option value="Submachine Gun">Submachine Gun</option>
     <option value="Assault Rifle">Assault Rifle</option>
     <option value="Sniper Rifle">Sniper Rifle</option>

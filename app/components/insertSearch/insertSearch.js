@@ -7,7 +7,7 @@ export const insertSearch = (ubicationID, section, id) => {
   const ubication = document.querySelector(ubicationID);
   ubication.insertAdjacentHTML(
     "beforeBegin",
-    `<input type="text" class="searchInput" id="${id}"/>`
+    `<input type="text" class="searchInput" id="${id}" placeholder="Search..."/>`
   );
 
   const input = document.getElementById(id);
