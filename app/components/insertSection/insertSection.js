@@ -6,7 +6,6 @@ export const insertSection = (sectionID, title, divID) => {
     <section class="section-container" id="${sectionID}">
         <h1 class="title">${title}</h1>
         <div class="figures-container" id="${divID}">
-        <input type="text" class="searchInput" id="specialistsInput"/>
         </div>
     </section>
     `
