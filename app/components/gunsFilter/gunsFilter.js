@@ -19,9 +19,6 @@ export const gunsFilter = () => {
   select.addEventListener("change", async (event) => {
     try {
       const guns = await getData("https://bo3-legacy-json-server.onrender.com/guns");
-
-      console.log(guns)
-
       const filteredGuns = guns.filter((gun) => {
         return gun.type
           .toLowerCase()

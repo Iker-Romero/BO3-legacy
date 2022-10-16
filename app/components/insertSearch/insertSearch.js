@@ -12,23 +12,15 @@ export const insertSearch = (ubicationID, section, id) => {
 
   const input = document.getElementById(id);
 
-  console.log(input);
-
-  // const seccion = document.querySelector("#specialists-section");
-
   input.addEventListener("input", async () => {
     try {
-      console.log("hola");
       const figuresArray = await getData(
         `https://bo3-legacy-json-server.onrender.com/${section}`
       );
-      console.log(figuresArray);
       const filteredFigures = figuresArray.filter((figure) => {
         const name = figure.alias || figure.name;
         return name.toLowerCase().includes(input.value.toLowerCase());
       });
-
-      console.log(filteredFigures);
 
       if (section === "specialists") {
         clearChilds("specialists-figures");
