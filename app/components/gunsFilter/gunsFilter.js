@@ -1,5 +1,6 @@
 import { clearChilds } from "../../utilities/clearChilds";
 import { insertGuns } from "../insertGuns/insertGuns";
+import { getData } from "../../services/sevices";
 
 export const gunsFilter = () => {
   const input = document.querySelector("#gunsInput");
@@ -17,12 +18,16 @@ export const gunsFilter = () => {
   const select = document.querySelector("#gunsFilter");
   select.addEventListener("change", async (event) => {
     try {
-      const guns = getData("https://bo3-legacy-json-server.onrender.com/guns");
+      const guns = await getData("https://bo3-legacy-json-server.onrender.com/guns");
+
+      console.log(guns)
+
       const filteredGuns = guns.filter((gun) => {
-        return gun.type.toLowerCase().includes(event.target.value.toLowerCase());
+        return gun.type
+          .toLowerCase()
+          .includes(event.target.value.toLowerCase());
       });
-      const parent = document.querySelector("#guns-figures");
-      clearChilds(parent);
+      clearChilds("guns-figures");
       insertGuns(filteredGuns, "#guns-figures");
     } catch (error) {
       console.log(error);

@@ -31,7 +31,7 @@ export const insertGenerator = async () => {
       );
       const randomGun = [guns[Math.floor(Math.random() * guns.length)]];
       // Elimino los anteriores una vez ya está todo cargado para que no se contraiga la página en esos milisegundos
-      clearChilds(document.querySelector("#random-figures"));
+      clearChilds("random-figures");
       insertSpecialists(randomSpecialist, "#random-figures");
       insertGuns(randomGun, "#random-figures");
     } catch (error) {
