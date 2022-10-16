@@ -3,7 +3,9 @@ export const insertSpecialists = async (array, ubicationID) => {
     const specialists = await array;
     const figuresContainer = document.querySelector(ubicationID);
     specialists.forEach((specialist) => {
-      figuresContainer.innerHTML += `
+      figuresContainer.insertAdjacentHTML(
+        "beforeend",
+        `
         <figure>
           <div class="figure-description">
             <figcaption>${specialist.alias}</figcaption>
@@ -14,6 +16,7 @@ export const insertSpecialists = async (array, ubicationID) => {
           </div>
         </figure>
         `
+      );
     });
   } catch (error) {
     console.log(error);

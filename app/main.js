@@ -13,13 +13,13 @@ import "./style.css";
 const init = () => {
   animatedBackground();
   navBar();
-  insertSection("specialists-section", "SPECIALISTS", "specialists-figures");
+  // insertSection("specialists-section", "SPECIALISTS", "specialists-figures");
   insertSpecialists(
     getData("https://bo3-legacy-json-server.onrender.com/specialists"),
     "#specialists-figures"
   );
   insertSearch("#specialists-figures", "specialists", "specialistsInput");
-  insertSection("guns-section", "GUNS", "guns-figures");
+  // insertSection("guns-section", "GUNS", "guns-figures");
   insertSearch("#guns-figures", "guns", "gunsInput");
   insertGuns(
     getData("https://bo3-legacy-json-server.onrender.com/guns"),

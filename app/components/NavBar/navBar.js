@@ -1,6 +1,8 @@
 export const navBar = () => {
   const app = document.querySelector("#app");
-  app.innerHTML += `
+  app.insertAdjacentHTML(
+    "afterbegin",
+    `
     <header>
       <nav>
         <ul>
@@ -19,5 +21,6 @@ export const navBar = () => {
         </ul>
       </nav>
     </header>
-    `;
+    `
+  );
 };

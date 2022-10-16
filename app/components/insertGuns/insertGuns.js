@@ -2,7 +2,9 @@ export const insertGuns = async (array, ubicationID) => {
   const guns = await array;
   guns.forEach((gun) => {
     const figuresContainer = document.querySelector(ubicationID);
-    figuresContainer.innerHTML += `
+    figuresContainer.insertAdjacentHTML(
+      "beforeend",
+      `
       <figure>
         <div class="figure-description">
           <figcaption>${gun.name}</figcaption>
@@ -19,6 +21,7 @@ export const insertGuns = async (array, ubicationID) => {
           <p>Accuracy: ${gun.stats.accuracy}</p>
         </div>
       </figure>
-    `;
+      `
+    );
   });
 };

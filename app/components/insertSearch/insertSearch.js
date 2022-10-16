@@ -1,6 +1,7 @@
 import { clearChilds } from "../../utilities/clearChilds";
 import { insertGuns } from "../insertGuns/insertGuns";
 import { insertSpecialists } from "../insertSpecialists/insertSpecialists";
+import { getData } from "../../services/sevices";
 
 export const insertSearch = (ubicationID, section, id) => {
   // const ubication = document.querySelector(ubicationID);
@@ -24,12 +25,12 @@ export const insertSearch = (ubicationID, section, id) => {
     try {
       console.log("hola");
       const figuresArray = await getData(
-        `"https://bo3-legacy-json-server.onrender.com/${section}"`
+        `https://bo3-legacy-json-server.onrender.com/${section}`
       );
       console.log(figuresArray);
       const filteredFigures = figuresArray.filter((figure) => {
         const name = figure.alias || figure.name;
-        return name.toLowerCase().includes(input.target.value.toLowerCase());
+        return name.toLowerCase().includes(input.value.toLowerCase());
       });
 
       console.log(filteredFigures);
